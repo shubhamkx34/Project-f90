@@ -1,20 +1,16 @@
 import React from "react";
 
-const video = () => {
+const Video = () => {
   return (
-    <div className="relative h-screen w-full overflow-hidden">
-      <video
-        className="absolute top-0 left-0 h-full w-full object-cover"
-        autoPlay
-        loop
-        muted
-        playsInline
-        src="https://cdn.jsdelivr.net/gh/shubhamkx34/M5CS-assets@main/M5csE.mp4"
-      ></video>
-    </div>
+    <video
+      className="w-full h-full object-cover pointer-events-none"
+      autoPlay
+      loop
+      muted
+      playsInline
+      src="https://cdn.jsdelivr.net/gh/shubhamkx34/f90-assets@main/M5csE.mp4"
+    />
   );
 };
 
-export default video;
-
-
+export default Video;
