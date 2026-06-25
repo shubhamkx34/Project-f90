@@ -33,7 +33,7 @@ const Zig = (props) => {
 
     tml.to(".zig", {
       y: "100%",
-      duration: 0.4,
+      duration: 0.3,
       stagger: {
         amount: -0.18,
       },
@@ -42,6 +42,10 @@ const Zig = (props) => {
     // Hide overlay
     tml.set(zigref.current, {
       display: "none",
+    });
+
+    gsap.from(pageref.current, {
+      
     });
   }, [currentPath]);
 

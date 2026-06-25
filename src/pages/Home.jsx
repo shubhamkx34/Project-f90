@@ -2,7 +2,7 @@ import React from "react";
 import Video from "../components/Home/Video";
 import Home_top from '../components/Home/Home_top';
 import Home_bottom from "../components/Home/Home_bottom";
-
+import Navbar from "../components/common/Navbar";
 const Home = () => {
   return (
     <div className="w-full min-h-screen bg-black">
@@ -10,7 +10,8 @@ const Home = () => {
         <Video />
       </div>
       
-      <div className="relative z-10 flex flex-col w-full min-h-screen text-center uppercase">
+      <div className="relative z-25 flex flex-col w-full min-h-screen text-center uppercase">
+        <Navbar />
         <Home_top />
         <Home_bottom />
       </div>

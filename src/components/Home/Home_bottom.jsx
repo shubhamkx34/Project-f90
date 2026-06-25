@@ -15,7 +15,7 @@ const Home_bottom = () => {
         friction that ignites the tires to generate <br></br>
         Pure adrenaline. Filterless, it roars aloud and strikes on command.
       </p>
-      <div className="flex items-center justify-between mt-10 px-10 ">
+      <div className="flex items-center justify-between mt-10 px-10 mb-1  ">
         <Link
           className="border-3 hover:border-blue-950 hover:text-blue-800 rounded-full  overflow-hidden px-10 pt-2 leading-28 text-[6vw]"
           to="/records"
