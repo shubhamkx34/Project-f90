@@ -4,7 +4,9 @@ import Video from "./Video";
 const Home_top = () => {
   return (
     <div className="  ">
-      <div className="font-[font1] text-[9vw] leading-34 text-red-800 ">The monster</div>
+      <div className="font-[font1] text-[9vw] leading-34 ">
+        The <span className="text-red-800">monster</span>
+      </div>
       <div className="font-[font1] text-[9vw] leading-34 flex items-center justify-center">
         that
         <div className="w-[19vw] h-[8vw] rounded-full overflow-hidden shrink-0">

@@ -44,17 +44,12 @@ const Zig = (props) => {
       display: "none",
     });
 
-    gsap.from(pageref.current, {
-      
-    });
+    gsap.from(pageref.current, {});
   }, [currentPath]);
 
   return (
     <>
-      <div
-        ref={zigref}
-        className="h-screen w-full flex fixed z-50 top-0  pointer-events-none"
-      >
+      <div ref={zigref} className="h-screen w-full flex fixed z-50 top-0  pointer-events-none">
         <div className="zig h-full w-1/5 bg-black"></div>
         <div className="zig h-full w-1/5 bg-black"></div>
         <div className="zig h-full w-1/5 bg-black"></div>

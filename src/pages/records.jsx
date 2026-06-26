@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Records = () => {
-  return (
-    <div>Records</div>
-  )
-}
+  return <div>Records</div>;
+};
 
-export default Records
+export default Records;
