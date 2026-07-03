@@ -10,16 +10,16 @@
   src: url(../Fonts/Lausanne-500.woff2);
 }
 
-html,
-body,
-#root {
+html,body,#root {
+  
   overflow-x: hidden;
   max-width: 100vw;
 }
 .moveX{
   animation-name: moveAnimation;
-  animation-duration: 2s;
+  animation-duration: 8s;
   animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 @keyframes moveAnimation {
@@ -27,6 +27,6 @@ body,
     transform: translateX(0);
   }
   to{
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }

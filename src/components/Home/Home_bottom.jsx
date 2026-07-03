@@ -28,6 +28,7 @@ const Home_bottom = () => {
         >
           MACHINE
         </Link>
+        <link></link>
       </div>
     </div>
   );

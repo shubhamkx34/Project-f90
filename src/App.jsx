@@ -9,15 +9,16 @@ import FullNav from "./components/common/FullNav";
 const App = () => {
   return (
     <div className="w-screen min-h-screen text-4xl text-white">
-      {/* <div className="relative z-50">
+      <div className="relative z-50">
         <Navbar />
-      </div> */}
-      <FullNav />
-      {/*}    <Routes>
+      </div>
+
+      <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/fullnav" element={<FullNav />} />
         <Route path="/machine" element={<Machine />} />
         <Route path="/records" element={<Records />} />
-      </Routes> */}
+      </Routes>
     </div>
   );
 };
