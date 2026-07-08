@@ -8,9 +8,7 @@ import Zig from "./components/common/zig.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
-      <Zig>
-        <App />
-      </Zig>
+      <App />
     </BrowserRouter>
   </StrictMode>,
 );

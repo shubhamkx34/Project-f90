@@ -5,6 +5,7 @@ import Machine from "./pages/machine";
 import Records from "./pages/records";
 import Navbar from "./components/common/Navbar";
 import FullNav from "./components/common/FullNav";
+import Zig from './components/common/zig'
 
 const App = () => {
   return (
@@ -12,13 +13,14 @@ const App = () => {
       <div className="relative z-50">
         <Navbar />
       </div>
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/fullnav" element={<FullNav />} />
-        <Route path="/machine" element={<Machine />} />
-        <Route path="/records" element={<Records />} />
-      </Routes>
+      <Zig>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/fullnav" element={<FullNav />} />
+          <Route path="/machine" element={<Machine />} />
+          <Route path="/records" element={<Records />} />
+        </Routes>
+      </Zig>
     </div>
   );
 };

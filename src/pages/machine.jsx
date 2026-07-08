@@ -17,7 +17,7 @@ const Machine = () => {
         trigger: imageDivRef.current,
         start: "top 25.8%",
         end: "top -160%",
-        scrub: 1,
+        scrub: 2,
         pin: true,
         onUpdate: (elem) => {
           //Image scrolling with gsap animations

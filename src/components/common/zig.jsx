@@ -1,64 +1,62 @@
-import React from "react";
-import { useGSAP } from "@gsap/react";
+import React, { useRef } from "react";
 import gsap from "gsap";
-import { useRef } from "react";
+import { useGSAP } from "@gsap/react";
 import { useLocation } from "react-router-dom";
 
 const Zig = (props) => {
+  // 1. TRACKING THE URL
+  // useLocation gives us the current URL path (like "/" or "/machine").
+  // We store it in a variable [currentpath] so we can tell GSAP to re-run the animation every time this path changes.
   const currentPath = useLocation().pathname;
 
   const zigref = useRef(null);
   const pageref = useRef(null);
 
+  // useGSAP is a special React hook built by GSAP to automatically handle cleanup and prevent memory leaks.
   useGSAP(() => {
-    const tml = gsap.timeline({ defaults: { ease: "power2.inOut" } });
+    const tl = gsap.timeline();
 
-    // Show overlay instantly
-    tml.set(zigref.current, { display: "flex" });
+    //It is used to make all the black div's in row format
+    tl.set(zigref.current, { display: "flex" });
 
-    // Reset bars: anchored at top, scaled to 0 (invisible but full height reserved)
-    tml.set(".zig", {
+    // STEP B: SET STARTING POSITIONS,scaleY: 0 makes them completely flat (invisible).transformOrigin: "top" anchors them to the ceiling so they will grow downwards.
+    tl.set(".zig", {
       scaleY: 0,
-      transformOrigin: "top center",
-      force3D: true,       // force GPU layer upfront
+      transformOrigin: "top",
     });
 
-    // Phase 1: bars drop IN — staggered left to right (ladder effect)
-    tml.to(".zig", {
+    // STEP C: ANIMATE IN (THE DROPDOWN)
+    // We animate scaleY to 1 (100% full height).stagger: 0.05 tells GSAP to wait 0.05 seconds before dropping the next bar in the row, creating the "staircase" wipe.
+    tl.to(".zig", {
       scaleY: 1,
-      duration: 0.28,
-      ease: "power2.in",
-      stagger: {
-        each: 0.045,       // fixed per-bar delay (predictable, no overlap weirdness)
-        from: "start",
-      },
+      duration: 0.3,
+      ease: "power2.inOut",
+      stagger: -0.05,
     });
 
-    // Phase 2: bars slide OUT downward — same stagger direction = clean wipe
-    tml.to(".zig", {
+    // STEP D: FLIP THE ANCHOR POINT
+    tl.set(".zig", {
+      transformOrigin: "bottom",
+    });
+
+    // STEP E: ANIMATE OUT (THE SHRINK),We shrink the bars back to 0.,Because the anchor is now at the bottom, they pull upwards from the floor, revealing the new page underneath
+    tl.to(".zig", {
       scaleY: 0,
-      transformOrigin: "bottom center",
-      duration: 0.28,
-      ease: "power2.out",
-      stagger: {
-        each: 0.045,
-        from: "start",
-      },
+      duration: 0.3,
+      ease: "power2.inOut",
+      stagger: -0.05,
     });
 
-    // Hide overlay — no delay needed, scaleY:0 already hides bars
-    tml.set(zigref.current, { display: "none" });
+    // STEP F: HIDE THE WRAPPER, The animation is over. We hide the wrapper again
+    tl.set(zigref.current, { display: "none" });
 
+    // 4. THE DEPENDENCY ARRAY
+    // This tells React: "Any time 'currentPath' changes, re-run this entire useGSAP block."
   }, [currentPath]);
 
   return (
     <>
-      {/* Overlay: hidden by default, shown only during transition */}
-      <div
-        ref={zigref}
-        style={{ display: "none" }}
-        className="h-screen w-full flex fixed z-50 top-0 pointer-events-none"
-      >
+      <div ref={zigref} style={{ display: "none" }} className="h-screen w-full flex fixed z-999 top-0 pointer-events-none">
         <div className="zig h-full w-1/5 bg-black" />
         <div className="zig h-full w-1/5 bg-black" />
         <div className="zig h-full w-1/5 bg-black" />
@@ -66,6 +64,8 @@ const Zig = (props) => {
         <div className="zig h-full w-1/5 bg-black" />
       </div>
 
+{/* Renders the actual active page content (Home, Machine, etc.) safely underneath the animation.
+The pageref hooks this content layer to GSAP so you can easily animate the page itself later. */}
       <div ref={pageref}>{props.children}</div>
     </>
   );

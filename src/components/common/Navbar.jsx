@@ -31,9 +31,12 @@ const Navbar = () => {
       >
         <div className=" h-full w-full cursor-pointer bg-red-800">
           <div ref={navRef} className="h-0 w-full cursor-pointer transition-all absolute bg-blue-800">
-            <button onClick={()=>{
-              navigate("/fullnav")
-            }} className="w-full cursor-pointer pt-1 pl-[6.5vw]">
+            <button
+              onClick={() => {
+                navigate("/fullnav");
+              }}
+              className="w-full cursor-pointer pt-1 pl-[6.5vw]"
+            >
               <RiMenu4Fill />
             </button>
           </div>

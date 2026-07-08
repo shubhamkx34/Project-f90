@@ -1,7 +1,11 @@
 import React from "react";
 
 const Records = () => {
-  return <div>Records</div>;
+  return <div>
+    <h1 className="uppercase text-black">
+      Records
+    </h1>
+  </div>;
 };
 
 export default Records;
