@@ -2,10 +2,10 @@
 import Video from "../components/Home/Video";
 import Home_top from "../components/Home/Home_top";
 import Home_bottom from "../components/Home/Home_bottom";
-import Navbar from "../components/common/Navbar";
+
 const Home = () => {
   return (
-    <div className="w-full min-h-screen bg-black">
+    <div className="w-full min-h-screen overflow-y-auto bg-black">
       <div className="fixed top-0 left-0 w-full h-screen z-0">
         <Video />
       </div>

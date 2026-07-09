@@ -12,6 +12,7 @@ const Machine = () => {
     window.scrollTo(0, 0);
   }, []);
   useGSAP(() => {
+
     gsap.to(imageDivRef.current, {
       scrollTrigger: {
         trigger: imageDivRef.current,
@@ -30,8 +31,8 @@ const Machine = () => {
   });
 
   return (
-    <div className="bg-white min-h-screen w-full flex flex-col overflow-x-hidden ">
-      <div ref={imageDivRef} className="  absolute  rounded-full top-[12vw] left-[38vw] h-[22vw] w-[22vw] overflow-hidden ">
+    <div className="bg-white min-h-screen w-screen flex flex-col overflow-x-hidden">
+      <div ref={imageDivRef} className="stag  absolute  rounded-full top-[12vw] left-[38vw] h-[22vw] w-[22vw] overflow-hidden ">
         <img ref={imgRef} className="h-full w-full object-cover" />
       </div>
       <div className="relative ">

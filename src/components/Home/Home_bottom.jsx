@@ -20,7 +20,7 @@ const Home_bottom = () => {
           className="border-3 hover:border-blue-950 hover:text-blue-800 rounded-full  overflow-hidden px-10 pt-2 leading-28 text-[6vw]"
           to="/records"
         >
-          TRACK-RECORDS
+          TRACK RECORDS
         </Link>
         <Link
           className="border-3  hover:border-red-950 hover:text-red-800 rounded-full overflow-hidden text-[6vw] px-10 leading-28 pt-2 "
