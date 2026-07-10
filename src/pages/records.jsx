@@ -1,7 +1,13 @@
 import React from "react";
 import Record from "../components/Records/record";
+import IMG1 from "../../public/record1.png";
+import IMG2 from "../../public/record2.jpg";
+import IMG3 from "../../public/record3.jpg";
+import IMG4 from "../../public/record4.png";
+import IMG5 from "../../public/record5.jpg";
 import IMG6 from "../../public/record6.png";
 import IMG7 from "../../public/record7.png";
+import IMG8 from "../../public/record8.jpg";
 import gsap from "gsap/all";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -9,35 +15,35 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 const Records = () => {
   const data = [
     {
-      img: "https://media.easy-peasy.ai/1dc237bf-e779-4302-994d-9cd4cb0860d6/1bf3646b-078a-4391-963b-bf466bb60c49_medium.webp",
-      text:  <>Nordschleife Lap Time <br/> 7:29.57 </>
+      img:[IMG1],
+      text: <>Nordschleife Lap Time <br/> 7:29.57 </>
     },
     {
-      img: "https://images.caricos.com/b/bmw/2022_bmw_m5_cs/images/1600x1200/2022_bmw_m5_cs_147_1600x1200.jpg",
+      img:[IMG2] ,
       text: <> 0-100 KMPH Sprint <br />2.6 SEC</>
     },
     {
-      img: "https://images.caricos.com/b/bmw/2022_bmw_m5_cs/images/1600x1200/2022_bmw_m5_cs_137_1600x1200.jpg",
+      img:[IMG3],
       text:<>  S63 Twin-Turbo  V8<br /> 627 HP</>
     },
     {
-      img: "https://i0.wp.com/theauto.page/wp-content/uploads/2021/01/Scoop-M5-CS-1.jpg?fit=1024%2C682&ssl=1",
+      img:[IMG4],
       text: <> Hockenheim GP<br /> 1:53.6</>
     },
 
     {
-      img: "https://images.caricos.com/b/bmw/2022_bmw_m5_cs/images/1600x1200/2022_bmw_m5_cs_9_1600x1200.jpg",
+      img:[IMG5],
       text: <>Carbon Diet <br />154 LBS</> 
     },
     {
-      img: [IMG6],
+      img:[IMG6],
       text: <>V-Max Velocity<br/>305 KMPH</>
     },
     {
       img:[IMG7],
       text:<> Lightning Lap<br />2:50.3</> },
     {
-      img: "https://mediapool.bmwgroup.com/cache/P9/202309/P90523621/P90523621-the-bmw-m5-cs-motogp-safety-car-09-2023-2250px.jpg",
+      img:[IMG8],
       text:<> MotoGP LEAD<br/> Safety Car  2021</>
     },
   ];
