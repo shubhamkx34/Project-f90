@@ -9,7 +9,7 @@ import Zig from './components/common/Animation/zig'
 
 const App = () => {
   return (
-    <div className="w-screen min-h-screen text-4xl text-white">
+    <div className="w-screen min-h-screen text-4xl text-white overflow-x-hidden">
       <div className="relative z-50">
         <Navbar />
       </div>

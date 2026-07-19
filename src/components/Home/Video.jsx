@@ -13,4 +13,4 @@ const Video = () => {
   );
 };
 
-export default Video;
+export default Video

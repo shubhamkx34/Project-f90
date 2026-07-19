@@ -15,7 +15,7 @@ const Navbar = () => {
   const navBg = isHome ? "bg-transparent" : "bg-white";
  
   return (
-    <div className={`flex items-start justify-between h-[4.5vw] ${navBg}`}>
+    <div className={`flex items-start justify-between lg:h-[4.5vw]  h-11 ${navBg}`}>
       <div className="h-full">
         <button
           className="cursor-pointer h-full"
@@ -34,7 +34,7 @@ const Navbar = () => {
         onMouseLeave={() => {
           navRef.current.style.height = "0%";
         }}
-        className="h-11.5 w-[16.5vw] relative "
+        className="h-11 w-[39vw] lg:h-11.5 lg:w-[16.5vw] relative"
       >
         <div className=" h-full w-full cursor-pointer bg-red-800">
           <div ref={navRef} className="h-0 w-full cursor-pointer transition-all absolute bg-blue-800">
@@ -42,7 +42,7 @@ const Navbar = () => {
               onClick={() => {
                 navigate("/fullnav");
               }}
-              className="w-full cursor-pointer pt-1 pl-[6.5vw]"
+              className="w-full cursor-pointer pt-1 pl-14 pr-10  lg:pl-[6.5vw]"
             >
               <RiMenu4Fill />
             </button>

@@ -38,12 +38,12 @@ const FullNav = () => {
     <div className="fullnav fixed inset-0 z-50 min-h-screen w-full bg-black">
       <div>
         <div className="flex justify-between">
-          <div className="h-[4.5vw] w-[12vw]">
+          <div className="lg:h-[4.5vw] lg:w-[12vw] h-11">
             <button className="cursor-pointer h-full" onClick={() => navigate("/")}>
               <img className="h-full pt-2" src={F90} alt="F-90 Logo" />
             </button>
           </div>
-          <div className="w-[8.8vw] h-[9vw] ml-[2vw]">
+          <div className="lg:w-[8.8vw] lg:h-[9vw] lg:ml-[2vw]  lg:p-0 p-3">
             <button className="cursor-pointer">
               <RiCloseLargeLine
                 onClick={() => {
@@ -54,7 +54,7 @@ const FullNav = () => {
             </button>
           </div>
         </div>
-        <div className="mt-[5vw] flex flex-col">
+        <div className="lg:mt-[5vw] mt-[45vw] flex flex-col">
           <div
             onClick={() => {
               navigate("/records");
@@ -63,7 +63,7 @@ const FullNav = () => {
             onMouseLeave={() => handleMouseLeave(0)}
             className="link cursor-pointer relative h-full w-full bg-black text-zinc-500 "
           >
-            <h1 className="font-extrabold font-[font2] text-[7vw] text-center border-y">TRACK RECORDS</h1>
+            <h1 className="font-extrabold font-[font2] text-[12vw] lg:text-[7vw] text-center border-y">TRACK RECORDS</h1>
 
             <div
               ref={(el) => (navRef.current[0] = el)}
@@ -90,7 +90,7 @@ const FullNav = () => {
             onMouseLeave={() => handleMouseLeave(1)}
             className="link cursor-pointer relative h-full w-full bg-black text-zinc-500"
           >
-            <h1 className="font-extrabold font-[font2] text-[7vw] text-center border-y">MACHINE</h1>
+            <h1 className="font-extrabold font-[font2] text-[12vw] lg:text-[7vw] text-center border-y">MACHINE</h1>
 
             <div
               ref={(el) => (navRef.current[1] = el)}
@@ -114,7 +114,7 @@ const FullNav = () => {
             onMouseLeave={() => handleMouseLeave(2)}
             className="link cursor-pointer relative h-full w-full  bg-black text-zinc-500"
           >
-            <h1 className="font-extrabold font-[font2] text-[7vw] text-center border-y">TELEMETRY</h1>
+            <h1 className="font-extrabold font-[font2] text-[12vw] lg:text-[7vw] text-center border-y">TELEMETRY</h1>
 
             <div
               ref={(el) => (navRef.current[2] = el)}

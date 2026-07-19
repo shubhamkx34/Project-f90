@@ -3,25 +3,24 @@ import Video from "./Video";
 
 const Home_top = () => {
   return (
-    <div className="  ">
-      <div className="font-[font1] text-[9vw] leading-34 ">
+    <div className="font-[font1] text-[11vw] lg:text-[9vw] pt-[12vh] lg:pt-0  ">
+      <div className="leading-[1.4] lg:leading-34">
         The <span className="text-red-800">monster</span>
       </div>
-      <div className="font-[font1] text-[9vw] leading-34 flex items-center justify-center">
+      <div className="leading-[1.4] lg:leading-34 flex items-center justify-center">
         that
-        <div className="w-[19vw] h-[8vw] rounded-full overflow-hidden shrink-0">
+        <div className="w-[34vw] h-[13.5vw] ml-5 lg:w-[19vw] lg:h-[8vw] rounded-full overflow-hidden shrink-0">
           <Video />
         </div>
       </div>
-      <div className="font-[font1] text-[9vw] leading-[1.1] flex items-center justify-center gap-[2vw] mt-7">
+      <div className="leading-[1.4] flex items-center justify-center gap-[2vw] mt-1 lg:mt-7">
         devours the
       </div>
-      <div className="font-[font1] text-[9vw] leading-34 flex items-center justify-center text-blue-800">
+      <div className="leading-[1.4] lg:pt-0 pt-2 lg:leading-34 flex items-center justify-center text-blue-800">
         tarmac
       </div>
     </div>
   );
 };
 
-export default Home_top;
-//
+export default Home_top
