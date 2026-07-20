@@ -12,16 +12,16 @@ const Machine = () => {
     window.scrollTo(0, 0);
   }, []);
   useGSAP(() => {
-
     gsap.to(imageDivRef.current, {
       scrollTrigger: {
         trigger: imageDivRef.current,
-        start: "top 25.8%",
+        start: "top 14%",
         end: "top -160%",
+
         scrub: 2,
         pin: true,
         onUpdate: (elem) => {
-          //Image scrolling with gsap animations
+          //Image scrolling with gsap <animations></animations>
           const imgindex = Math.min(Math.floor(elem.progress * imgarray.length), imgarray.length - 1);
           //Math.min( [Whatever number your scroll calculates] , 8 )
           imgRef.current.src = imgarray[imgindex];
@@ -32,17 +32,20 @@ const Machine = () => {
 
   return (
     <div className="bg-white min-h-screen w-screen flex flex-col overflow-x-hidden">
-      <div ref={imageDivRef} className="stag  absolute  rounded-full top-[12vw] left-[38vw] h-[22vw] w-[22vw] overflow-hidden ">
-        <img ref={imgRef} className="h-full w-full object-cover" />
+      <div
+        ref={imageDivRef}
+        className="stag  absolute  rounded-full top-[39vh] left-[11vw] h-[78vw] w-[78vw] lg:top-[12vw] lg:left-[38vw] lg:h-[22vw] lg:w-[22vw] overflow-hidden  "
+      >
+        <img ref={imgRef} src={imgarray[0]} className="h-full w-full object-cover" />
       </div>
-      <div className="relative ">
-        <div className="mt-[55vh] w-full flex justify-center">
-          <h1 className="text-[20vw] text-black font-[font2] leading-[17vw] uppercase text-center">
+      <div className="relative">
+        <div className="mt-[70vh] lg:mt-[55vh] w-full flex justify-center ">
+          <h1 className="text-[28.5vw] lg:text-[20vw] text-black font-[font2] leading-[27vw] lg:leading-[17vw] uppercase text-center">
             Six-<br></br>Thirty<br></br>five
           </h1>
         </div>
-        <div className="text-right mt-2 pr-19 mb-2 h-[85vw] ">
-          <p className="text-black text-[3.5vw] font-semibold leading-[3.8vw] tracking-tighter">
+        <div className="text-right  mt-12 lg:mt-2 pr-5 lg:pr-19 lg:mb-2 lg:h-[85vw] overflow-x-hidden ">
+          <p className="hidden lg:block text-black text-[3.5vw] font-semibold leading-[3.8vw] tracking-tighter">
             Our racing heritage <br />
             nourishes our <span className="text-red-800">performance</span> . We <br /> stay focused and say no to extra weight, <br /> cutting
             exactly 70 kilograms to craft agility. A true
@@ -53,6 +56,14 @@ const Machine = () => {
             <br />
             straight-line sedans, but we ruin them in corners. <br /> That's why we are committed to relentless <br />
             Engineering to forge absolute, <br /> untouchable legends.
+          </p>
+        </div>
+        <div className="block lg:hidden text-center  mt-4 p-8 overflow-x-hidden ">
+          <p className=" text-black text-2xl font-semibold leading-[9vw]  tracking-widest  ">
+            Our racing heritage nourishes our <span className="text-red-800">performance</span> . We stay focused and say no to extra weight, cutting
+            exactly 70 kilograms to craft agility. A true sports car is <span className="text-blue-800">alive</span>. It has dynamics, a personality,
+            a legacy dating back to 1984. If we forget that, we can build quick straight-line sedans, but we ruin them in corners. That's why we are
+            committed to relentless Engineering to forge absolute, untouchable legends.
           </p>
         </div>
       </div>

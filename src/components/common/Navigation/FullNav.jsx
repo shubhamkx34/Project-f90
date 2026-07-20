@@ -49,12 +49,12 @@ const FullNav = () => {
                 onClick={() => {
                   navigate(-1);
                 }}
-                className="text-[9vw] text-zinc-500 hover:text-white"
+                className="text-[13vw] lg:text-[9vw] text-zinc-500 hover:text-white"
               />
             </button>
           </div>
         </div>
-        <div className="lg:mt-[5vw] mt-[45vw] flex flex-col">
+        <div className="lg:mt-[5vw] mt-[50vw] flex flex-col">
           <div
             onClick={() => {
               navigate("/records");
@@ -63,21 +63,21 @@ const FullNav = () => {
             onMouseLeave={() => handleMouseLeave(0)}
             className="link cursor-pointer relative h-full w-full bg-black text-zinc-500 "
           >
-            <h1 className="font-extrabold font-[font2] text-[12vw] lg:text-[7vw] text-center border-y">TRACK RECORDS</h1>
+            <h1 className="font-extrabold font-[font2] text-[12vw] lg:text-[7vw] text-center  border-y">TRACK RECORDS</h1>
 
             <div
               ref={(el) => (navRef.current[0] = el)}
               className=" flex absolute bg-blue-950 text-white h-0 top-0 w-full overflow-hidden items-center transition-all duration-300 ease-[cubic-bezier(0.76,0,0.24,1)] [&::-webkit-scrollbar]:hidden  "
             >
               <div className="moveX flex  items-center w-max h-full">
-                <h2 className="shrink-0 px-4 whitespace-nowrap font-extrabold font-[font2] text-[7vw]">PURE DOMINANCE</h2>
-                <img className="shrink-0 mx-4 w-[19vw] h-[7vw] rounded-full object-cover overflow-hidden" src={Img2} alt="" />
-                <h2 className="shrink-0 px-4 whitespace-nowrap font-extrabold font-[font2] text-[7vw]">PURE DOMINANCE</h2>
-                <img className="shrink-0 mx-4 w-[19vw] h-[7vw] rounded-full object-cover overflow-hidden" src={Img1} alt="" />
-                <h2 className="shrink-0 px-4 whitespace-nowrap font-extrabold font-[font2] text-[7vw]">PURE DOMINANCE</h2>
-                <img className="shrink-0 mx-4 w-[19vw] h-[7vw] rounded-full object-cover overflow-hidden" src={Img2} alt="" />
-                <h2 className="shrink-0 px-4 whitespace-nowrap font-extrabold font-[font2] text-[7vw]">PURE DOMINANCE</h2>
-                <img className="shrink-0 mx-4 w-[19vw] h-[7vw] rounded-full object-cover overflow-hidden" src={Img1} alt="" />
+                <h2 className="shrink-0 px-4 whitespace-nowrap font-extrabold font-[font2] text-[8vw] lg:text-[7vw]">PURE DOMINANCE</h2>
+                <img className="shrink-0 mx-4 h-[20vw] w-[40vw] lg:w-[19vw]  lg:h-[7vw] rounded-full object-cover overflow-hidden" src={Img2} alt="" />
+                <h2 className="shrink-0 px-4 whitespace-nowrap font-extrabold font-[font2] text-[8vw] lg:text-[7vw]">PURE DOMINANCE</h2>
+                <img className="shrink-0 mx-4 h-[20vw] w-[40vw] lg:w-[19vw]  lg:h-[7vw] rounded-full object-cover overflow-hidden" src={Img1} alt="" />
+                <h2 className="shrink-0 px-4 whitespace-nowrap font-extrabold font-[font2] text-[8vw] lg:text-[7vw]">PURE DOMINANCE</h2>
+                <img className="shrink-0 mx-4 h-[20vw] w-[40vw] lg:w-[19vw]  lg:h-[7vw] rounded-full object-cover overflow-hidden" src={Img2} alt="" />
+                <h2 className="shrink-0 px-4 whitespace-nowrap font-extrabold font-[font2] text-[8vw] lg:text-[7vw]">PURE DOMINANCE</h2>
+                <img className="shrink-0 mx-4 h-[20vw] w-[40vw] lg:w-[19vw]  lg:h-[7vw] rounded-full object-cover overflow-hidden" src={Img1} alt="" />
               </div>
             </div>
           </div>
@@ -88,23 +88,23 @@ const FullNav = () => {
             }}
             onMouseEnter={() => handleMouseEnter(1)}
             onMouseLeave={() => handleMouseLeave(1)}
-            className="link cursor-pointer relative h-full w-full bg-black text-zinc-500"
+            className="link cursor-pointer relative lg:h-full lg:w-full bg-black text-zinc-500 lg:py-0 py-5"
           >
-            <h1 className="font-extrabold font-[font2] text-[12vw] lg:text-[7vw] text-center border-y">MACHINE</h1>
+            <h1 className="font-extrabold font-[font2] text-[12vw] lg:text-[7vw] text-center lg:py-0 py-5 border-y">MACHINE</h1>
 
             <div
               ref={(el) => (navRef.current[1] = el)}
               className=" flex absolute bg-red-950 text-white h-0 top-0 w-full overflow-hidden items-center transition-all duration-300 ease-[cubic-bezier(0.76,0,0.24,1)] [&::-webkit-scrollbar]:hidden "
             >
               <div className="moveX flex items-center w-max h-full">
-                <h2 className="whitespace-nowrap font-extrabold font-[font2] text-[7vw]">INSIDE THE BEAST</h2>
-                <img className="shrink-0 mx-4 w-[19vw] h-[7vw] rounded-full object-cover overflow-hidden" src={Img3} alt="" />
-                <h2 className="whitespace-nowrap font-extrabold font-[font2] text-[7vw]">INSIDE THE BEAST</h2>
-                <img className="shrink-0 mx-4 w-[19vw] h-[7vw] rounded-full object-cover overflow-hidden" src={Img4} alt="" />
-                <h2 className="whitespace-nowrap font-extrabold font-[font2] text-[7vw]">INSIDE THE BEAST</h2>
-                <img className="shrink-0 mx-4 w-[19vw] h-[7vw] rounded-full object-cover overflow-hidden" src={Img3} alt="" />
-                <h2 className="whitespace-nowrap font-extrabold font-[font2] text-[7vw]">INSIDE THE BEAST</h2>
-                <img className="shrink-0 mx-4 w-[19vw] h-[7vw] rounded-full object-cover overflow-hidden" src={Img4} alt="" />
+                <h2 className="whitespace-nowrap font-extrabold font-[font2] text-[9vw] lg:text-[7vw]">INSIDE THE BEAST</h2>
+                <img className="shrink-0 mx-4 h-[30vw] w-[50vw] lg:w-[19vw] lg:h-[7vw] rounded-full object-cover overflow-hidden" src={Img3} alt="" />
+                <h2 className="whitespace-nowrap font-extrabold font-[font2] text-[9vw] lg:text-[7vw]">INSIDE THE BEAST</h2>
+                <img className="shrink-0 mx-4 h-[30vw] w-[50vw] lg:w-[19vw] lg:h-[7vw] rounded-full object-cover overflow-hidden" src={Img4} alt="" />
+                <h2 className="whitespace-nowrap font-extrabold font-[font2] text-[9vw] lg:text-[7vw]">INSIDE THE BEAST</h2>
+                <img className="shrink-0 mx-4 h-[30vw] w-[50vw] lg:w-[19vw] lg:h-[7vw] rounded-full object-cover overflow-hidden" src={Img3} alt="" />
+                <h2 className="whitespace-nowrap font-extrabold font-[font2] text-[9vw] lg:text-[7vw]">INSIDE THE BEAST</h2>
+                <img className="shrink-0 mx-4 h-[30vw] w-[50vw] lg:w-[19vw] lg:h-[7vw] rounded-full object-cover overflow-hidden" src={Img4} alt="" />
               </div>
             </div>
           </div>
@@ -114,27 +114,27 @@ const FullNav = () => {
             onMouseLeave={() => handleMouseLeave(2)}
             className="link cursor-pointer relative h-full w-full  bg-black text-zinc-500"
           >
-            <h1 className="font-extrabold font-[font2] text-[12vw] lg:text-[7vw] text-center border-y">TELEMETRY</h1>
+            <h1 className="font-extrabold font-[font2] text-[12vw] lg:text-[7vw] text-center lg:py-0 py-5  border-y">TELEMETRY</h1>
 
             <div
               ref={(el) => (navRef.current[2] = el)}
               className=" flex absolute bg-slate-900 text-white h-0 top-0 w-full overflow-hidden items-center transition-all duration-300 ease-[cubic-bezier(0.76,0,0.24,1)] [&::-webkit-scrollbar]:hidden "
             >
               <div className="moveX flex items-center w-max h-full">
-                <h2 className="whitespace-nowrap font-extrabold font-[font2] text-[7vw]">READ THE PULSE</h2>
-                <img className="shrink-0 mx-4 w-[19vw] h-[7vw] rounded-full object-cover overflow-hidden" src={Img5} alt="" />
-                <h2 className="whitespace-nowrap font-extrabold font-[font2] text-[7vw]">READ THE PULSE</h2>
-                <img className="shrink-0 mx-4 w-[19vw] h-[7vw] rounded-full object-cover overflow-hidden" src={Img6} alt="" />
-                <h2 className="whitespace-nowrap font-extrabold font-[font2] text-[7vw]">READ THE PULSE</h2>
-                <img className="shrink-0 mx-4 w-[19vw] h-[7vw] rounded-full object-cover overflow-hidden" src={Img5} alt="" />
-                <h2 className="whitespace-nowrap font-extrabold font-[font2] text-[7vw]">READ THE PULSE</h2>
-                <img className="shrink-0 mx-4 w-[19vw] h-[7vw] rounded-full object-cover overflow-hidden" src={Img6} alt="" />
+                <h2 className="whitespace-nowrap font-extrabold font-[font2] text-[8vw] lg:text-[7vw]">READ THE PULSE</h2>
+                <img className="shrink-0 mx-4 h-[20vw] w-[40vw] lg:w-[19vw] lg:h-[7vw] rounded-full object-cover overflow-hidden" src={Img5} alt="" />
+                <h2 className="whitespace-nowrap font-extrabold font-[font2] text-[8vw] lg:text-[7vw]">READ THE PULSE</h2>
+                <img className="shrink-0 mx-4 h-[20vw] w-[40vw] lg:w-[19vw] lg:h-[7vw] rounded-full object-cover overflow-hidden" src={Img6} alt="" />
+                <h2 className="whitespace-nowrap font-extrabold font-[font2] text-[8vw] lg:text-[7vw]">READ THE PULSE</h2>
+                <img className="shrink-0 mx-4 h-[20vw] w-[40vw] lg:w-[19vw] lg:h-[7vw] rounded-full object-cover overflow-hidden" src={Img5} alt="" />
+                <h2 className="whitespace-nowrap font-extrabold font-[font2] text-[8vw] lg:text-[7vw]">READ THE PULSE</h2>
+                <img className="shrink-0 mx-4 h-[20vw] w-[40vw] lg:w-[19vw] lg:h-[7vw] rounded-full object-cover overflow-hidden" src={Img6} alt="" />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </div> 
   );
 };
 

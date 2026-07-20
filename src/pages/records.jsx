@@ -19,8 +19,8 @@ const Records = () => {
       text: <>Nordschleife Lap Time <br/> 7:29.57 </>
     },
     {
-      img:[IMG2] ,
-      text: <> 0-100 KMPH Sprint <br />2.6 SEC</>
+      img:[IMG7] ,
+      text: <>Lightning Lap<br />2:50.3 </>   
     },
     {
       img:[IMG3],
@@ -32,19 +32,19 @@ const Records = () => {
     },
 
     {
-      img:[IMG5],
-      text: <>Carbon Diet <br />154 LBS</> 
+      img:[IMG2],
+      text: <>  0-100 KMPH Sprint <br />2.6 SEC</> 
     },
     {
       img:[IMG6],
       text: <>V-Max Velocity<br/>305 KMPH</>
     },
     {
-      img:[IMG7],
-      text:<> Lightning Lap<br />2:50.3</> },
-    {
       img:[IMG8],
-      text:<> MotoGP LEAD<br/> Safety Car  2021</>
+      text:<> MotoGP LEAD<br/> Safety Car  2021 </> },
+    {
+      img:[IMG5],
+      text:<>Carbon Diet <br />154 LBS</>
     },
   ];
 
@@ -70,13 +70,13 @@ const Records = () => {
   return (
     <div id="main" className="h-screen w-full overflow-y-auto overflow-x-hidden bg-white p-2">
       <div className="pt-[32vh]">
-        <h1 className="uppercase text-[12vw] text-black font-[font2]">Records</h1>
+        <h1 className="uppercase text-6xl lg:text-[12vw] text-black font-[font2]">Records</h1>
       </div>
 
       <div className="stag w-full  flex flex-wrap mt-[-3.5vh]">
         {data.map(function (elem, index) {
           return (
-            <div className="thin w-1/2 h-[70vh] p-1 ">
+            <div className="thin  lg:w-1/2 lg:h-[70vh] p-1 ">
               <Record key={index} image={elem.img} hoverText={elem.text} />
             </div>
           );
