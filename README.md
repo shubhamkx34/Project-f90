@@ -1,16 +1,27 @@
-# React + Vite
+🚀F-90 Motion — BMW M5 CS inspired:
+Project F-90 is an interactive web experience dedicated to the BMW M5 CS—an apex predator born from 40 years of BMW M legacy. This site combines high-end automotive storytelling with fluid, scroll-driven animations to bring the speed, agility, and engineering of the F-90 to life across all devices.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Live Demo 
+>
 
-Currently, two official plugins are available:
+🛠️Core Tech Stack:
+=> Framework :
+*Vite- Next-generation frontend tooling used for ultra-fast bundling and optimal site performance.
+*React.js- Built with functional components and hooks for a fast, modular user interface.
+=>Styling :
+*Tailwind CSS- Utility-first styling framework implementing a strict mobile-first responsive architecture.
+=>Animation :
+*GSAP(GreenSock Animation Platform)- The industry-standard JavaScript animation library powering the site's high-performance animations.
+=>Video CDN :
+*Jsdelivr- fast, reliable global Content Delivery Network (CDN) integrated to serve heavy external assets—such as the high-resolution F-90 videos and image arrays—directly from GitHub repositories.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+✨Integrated Technologies & Features :
+*GSAP & ScrollTrigger: Powers custom scroll-linked animations, staggered grid expansions, and dynamic frame-by-frame image sequence reveals.
+*React Router DOM: Enables seamless, zero-reload page navigation and smooth full-screen menu transitions.
+*Dynamic Media Pipelines: Integrates inline autoplaying video pills and scroll-mapped image arrays that respond directly to user scroll velocity.
+*📱Adaptive UI/UX: Utilizes custom viewport units (vw/vh) and precision leading to deliver a flawless visual experience on everything from 360px smartphones to high-resolution desktop monitors.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+👨‍💻 Author :
+Shubham Kumar
+GitHub: @shubhamkx34
